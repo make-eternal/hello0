@@ -26,43 +26,26 @@
             </div>
 
             {{"<!-- Contact Form -->" | safeHTML}}
-            <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-              <div class="form-group">
-                <form name="contact" method="POST" data-netlify="true">
-               </div>
-               <div class="form-group">
-  <p>
+    <form name="contact" method="POST" data-netlify="true">
+<p>
     <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-                   </div>
-<div class="form-group">
-  <p>
+</p>
+<p>
     <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-</div>    
-  <div class="form-group">
+</p>
 <p>
     <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-</div>
-<div class="form-group">  
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+            </select></label>
+</p>
 <p>
     <label>Message: <textarea name="message"></textarea></label>
-  </p>
-</div>    
-  <div class="form-group">  
+</p>
 <p>
     <button type="submit">Send</button>
-  </p>
-</div>      
-</form>  
-            </div>
-
-        </div>
-    </div>
+</p>
+    </form>  
 
     {{ if .Site.Data.contact.enable_maps }}
     {{"<!-- Google Map -->" | safeHTML}}
