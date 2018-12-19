@@ -843,8 +843,6 @@ display: block;
 width: 150px;
 float: left;
 }
-label:after { content: ": " }
-
 
 .contact-us {
   padding-top: 50px;
